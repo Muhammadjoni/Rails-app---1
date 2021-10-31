@@ -1,0 +1,16 @@
+<h1>These are the contacts</h1>
+
+<%#= Time.now %>
+<%#group = ['Beyonce', 'Kelly'] %>
+<%# you could use it like the line above but better to add the group instance to the controller %>
+
+<form action="/contact" method="get">
+  <input type="text" name="member" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+
+<ul>
+<% @group.each do |member| %>
+  <li><%= member %></li>
+<% end %>
+</ul>

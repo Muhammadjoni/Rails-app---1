@@ -10,6 +10,18 @@
   </head>
 
   <body>
+    <div>
+      <span>Navbar here</span>
+      <%= link_to 'Home', root_path %>
+      <%= link_to 'About', about_path %>
+      <%= link_to 'Contact', contact_path %>
+    </div>
+
     <%= yield %>
+
+    <div>
+    <span>Footer here</span>
+
+    </div>
   </body>
 </html>
